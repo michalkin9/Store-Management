@@ -1,0 +1,23 @@
+table, th, td,tr{
+    /* border-width: thin;
+    border-style: solid; */
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table{
+    margin: 10px;
+}
+
+tr{
+    padding: 5px;
+}
+
+th{
+    padding: 8px;
+}
+
+td {
+    padding:15px;   
+}
+

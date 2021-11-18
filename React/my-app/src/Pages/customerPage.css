@@ -1,0 +1,34 @@
+#warpperCustomerPage {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(244, 230, 211);
+}
+
+#left_page {
+    flex: 5;
+}
+
+#right_page {
+    flex: 5;
+} 
+
+h2{
+    color: cadetblue;
+}
+
+#buyProductDiv{
+    margin: 15px;
+    border-style: solid;
+    border-width: thin;
+    width: 250px;
+    height: 150px;
+    padding: 10px;
+}
+
+/* #buyProductDivContent{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100px;
+    margin: 15px auto;
+} */

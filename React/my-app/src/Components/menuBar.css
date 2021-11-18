@@ -1,0 +1,23 @@
+#menu-bar{
+    background-color: cadetblue;
+    height: 50px; 
+    display: flex;
+    flex-direction: row;
+}
+
+.menuButton{
+    /* height:27px; */
+    /* width: 80px; */
+    font-size: 25px;
+    color: white;
+    background-color: rgb(160, 219, 221);
+    border: none;
+    background: none;
+    /* margin:0 auto; */
+    font-family: "Gill Sans", sans-serif;
+}
+
+.menuButton:hover{
+    background-color: white;
+    color: cadetblue;
+}

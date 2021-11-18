@@ -1,0 +1,36 @@
+#wrapperEditPage {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(244, 230, 211);
+    margin: 10px;
+}
+
+#leftEditPage {
+    flex: 5;
+}
+
+#rightEditPage {
+    flex: 5;
+}
+
+#headerEdit{
+    text-align: center;
+    color: cadetblue;
+    text-shadow: 0 0 3px #ededf1, 0 0 5px #f0e9e9;
+}
+
+#buttons{
+    display: flex;
+    justify-content: space-around;
+}
+
+#editDiv{
+    margin: 15px;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 2px;
+    background-color: rgb(208, 245, 233);
+    width:250px;
+    padding: 15px;
+    margin-left: 100px;
+}
