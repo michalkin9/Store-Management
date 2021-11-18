@@ -1,12 +1,47 @@
 #addProductDiv{
-    border-style: solid;
-    border-radius: 3px;
-    border-color: black;
+    /* border-style: solid;*/
+    border-radius: 5px;
+    /* border-color: black; */
     border-width: thin;
-    background-color: rgb(208, 245, 233);
-    padding: 5px;
+    background-color: rgb(244, 230, 211);
+    box-shadow: 5px 5px 5px 5px #888888;;
+    padding: 20px;
     margin: 10px;
     width: 50%;
     height: 35%;
-    margin-top: 250px;
+    margin-top: 70px;
+    text-align: center;
+
 }
+
+.purchaseProductsButton {
+    background-color: #ffd620;
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #000000;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 30px;
+    line-height: 10px;
+    list-style: none;
+    margin: 0;
+    outline: none;
+    padding: 10px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: color 100ms;
+    vertical-align: baseline;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .purchaseProductsButton:hover,
+  .purchaseProductsButton:focus {
+    background-color: #f8ea6c;
+  }

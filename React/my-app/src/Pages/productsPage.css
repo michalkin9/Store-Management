@@ -6,10 +6,17 @@
 
 #left {
     flex: 5;
-    
+    /* margin: 5px; */
+    padding: 10px;
+    margin-left: 10%;
 }
 
 #right {
     flex: 5;
 }
 
+#numberOfPurchases{
+    color: #EA4C89;
+    font-size: 18px;
+    font-weight: bold;
+}

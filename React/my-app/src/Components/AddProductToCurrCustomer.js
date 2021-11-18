@@ -45,7 +45,7 @@ function AddProductToCurrCustomer({store}) {
                     )
                 })}
                 <br />
-                <button onClick={(e) =>  {handleClick(e)}}> Purchase Products</button>
+                <button onClick={(e) =>  {handleClick(e)}} className="purchaseProductsButton"> Purchase Products</button>
             </div>
         </div>
     )

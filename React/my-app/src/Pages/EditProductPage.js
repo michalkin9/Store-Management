@@ -53,8 +53,8 @@ function EditProductPage({store}) {
                         Price: <input type="text" name="price" defaultValue={currProduct.price} onChange={handleChange}/> <br />
                         Quantity : <input type="text" name="quantity" defaultValue={currProduct.quantity} onChange={handleChange}/> <br /> <br />
                         <div id="buttons">
-                            <button onClick={handleUpdate}>Update</button>
-                            <button onClick={handleDelete}>Delete</button>
+                            <button onClick={handleUpdate} className="editButtons">Update</button>
+                            <button onClick={handleDelete} className="editButtons">Delete</button>
                         </div>
                     </div>
 

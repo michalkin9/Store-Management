@@ -29,7 +29,7 @@ function BuyProduct({store}) {
                     </div>
                 )}
                 <br />
-                <button onClick={handleClickBuyProduct}>Buy Product</button>
+                <button onClick={handleClickBuyProduct} className="purchaseProductsButton" style={{textAlign:"center"}}>Buy Product</button>
             </div>
         </div>
     )

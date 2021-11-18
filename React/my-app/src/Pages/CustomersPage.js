@@ -6,18 +6,12 @@ import {observer} from 'mobx-react-lite';
 import './customerPage.css';
 
 function CustomersPage({store}) {
-    //const [allCustomers, setAllCustomers] = useState([]);
 
 
-    // useEffect(() => {
-    //     const fetchAllCustomers= async () => {
-    //         //store.selectedCustomer = 0;
-    //         const resp = await axios.get('http://localhost:8000/customers');
-    //         setAllCustomers(resp.data);
-    //         store.updateSelectedCustomerId(0);
-    //     }
-    //     fetchAllCustomers();
-    // }, [])
+    //to reset the component of buy product for specific customer
+    useEffect(() => {
+        store.updateSelectedCustomerId(0);
+    }, [])
 
     return (
         <div>

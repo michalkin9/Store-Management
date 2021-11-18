@@ -1,3 +1,5 @@
 #listCustomerWhoPurchased{
     margin-top: 70px;
+    overflow-y: scroll;
+    max-height: 450px;
 }

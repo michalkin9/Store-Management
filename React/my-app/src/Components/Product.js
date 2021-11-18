@@ -24,7 +24,7 @@ function Product(props) {
             Price:  {props.product.price} <br />
             Quantity:  {props.product.quantity} 
             <br /> <br />
-            <button onClick={updateSroteProps}> customers who purchased </button>
+            {props.show==='true' && <button onClick={updateSroteProps} className="customersWhoPurchasedButton"> customers who purchased </button>}
         </div>
     )
 }

@@ -12,8 +12,8 @@ function SingleCustomerPurchased({ info, store }) {
 
             <div>
                 customer name : <Link to="/customers/edit" onClick={(e) => { store.updateSelectedCustomerId(info.customerid) }}> {`${info.firstname} ${info.lastname}`} <br /></Link>
-                purchase Date : {`${info.date.split('T')[0]}`} <br />
-                <button onClick={(e) => { store.updateSelectedCustomerId(info.customerid) }}> Add product </button>
+                purchase Date : {`${info.date.split('T')[0]}`} <br /> <br />
+                <button onClick={(e) => { store.updateSelectedCustomerId(info.customerid) }} className="buyProductButton"> Add product </button>
                 <br />
             </div>
 

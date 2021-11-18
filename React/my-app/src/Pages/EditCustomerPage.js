@@ -55,8 +55,8 @@ function EditCustomerPage({ store }) {
                         Last Name: <input type="text" name="lastname" defaultValue={currCustomer.lastname} onChange={handleChange}/> <br />
                         City : <input type="text" name="city" defaultValue={currCustomer.city} onChange={handleChange}/> <br /> <br />
                         <div id="buttons">
-                            <button onClick={handleUpdate}>Update</button>
-                            <button onClick={handleDelete}>Delete</button>
+                            <button onClick={handleUpdate} className="editButtons">Update</button>
+                            <button onClick={handleDelete} className="editButtons">Delete</button>
                         </div>
                     </div>
 
@@ -65,7 +65,7 @@ function EditCustomerPage({ store }) {
                 <div id="rightEditPage">
                     <h4> The products {currCustomer.firstname} {currCustomer.lastname} bought:</h4>
                     {productsCustomerBought.map((product, index) => {
-                        return <Product key={index} product={product} store={store} />
+                        return <Product key={index} product={product} store={store} show={'false'}/>
                     })}
                 </div>
             </div>
