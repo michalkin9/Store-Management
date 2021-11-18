@@ -1,31 +1,27 @@
-#warpperCustomerPage {
+#warpper{
     display: flex;
     flex-direction: row;
     background-color: rgb(244, 230, 211);
 }
 
-#left_page {
-    flex: 5;
-}
-
-#right_page {
-    flex: 5;
-} 
-
-h2{
-    color: cadetblue;
-}
-
-#buyProductDiv{
-    margin: 15px;
-    border-style: solid;
+#filterDiv{
+    border: solid;
     border-width: thin;
-    width: 250px;
-    height: 150px;
-    padding: 10px;
+    width: 50%;
+    margin: 20px;
+    padding: 20px;
 }
 
-.buyButton {
+#leftPage{
+    flex: 5;
+
+}
+#rightPage{
+    flex: 5;
+}
+
+/* CSS */
+.searchButton {
     background-color: #EA4C89;
     border-radius: 8px;
     border-style: none;
@@ -36,8 +32,8 @@ h2{
     font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
     font-weight: 500;
-    height: 30px;
-    line-height: 10px;
+    height: 40px;
+    line-height: 20px;
     list-style: none;
     margin: 0;
     outline: none;
@@ -52,15 +48,22 @@ h2{
     touch-action: manipulation;
   }
   
-  .buyButton:hover,
-  .buyButton:focus {
+  .searchButton:hover,
+  .searchButton:focus {
     background-color: #F082AC;
   }
+ 
 
-/* #buyProductDivContent{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100px;
-    margin: 15px auto;
-} */
+.filterTable table, 
+.filterTable th,
+.filterTable  td,
+.filterTable tr{
+    /* border-width: thin;
+    border-style: solid; */
+    
+    border: none !important;
+    border-collapse: none !important;
+    font-size: 20px;
+
+}
+

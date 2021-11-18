@@ -24,15 +24,15 @@ function CustomerRow(props) {
     return (
         <tr>
                 <td>
-                    <div>
-                        {props.customer.firstname} {props.customer.lastname} <br/>
-                        <button onClick={handleClick}> Buy Product </button>
+                    <div style={{fontSize:"18px"}}>
+                        {props.customer.firstname} {props.customer.lastname} <br/> <br />
+                        <button onClick={handleClick} className="buyButton"> Buy Product </button>
                     </div>
                 </td>
                 <td>
                     <ul>
                         {purchasesInfo.map((info,index)=>{
-                             return <li> {info.name},  bought on: {info.date.split('T')[0]} </li>
+                             return <li style={{fontSize:"18px"}}> {info.name},  bought on: {info.date.split('T')[0]} </li>
                         })}
                     </ul>
                 </td>

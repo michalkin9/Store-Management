@@ -1,5 +1,4 @@
 import FilterRow from './FilterRow';
-
 function FilterTable({filteredData}) {
     return (
         <div>
