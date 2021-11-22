@@ -4,7 +4,7 @@ import { observer } from 'mobx-react-lite';
 import EditProductCustomer from '../Components/EditProductCustomer';
 
 
-function EditProductPage({store}) {
+function EditProductPage({ store }) {
 
     const [currProduct, setCurrProduct] = useState([]);
     const [customerWhoPurchased, setCustomerWhoPurchased] = useState([]);
@@ -17,7 +17,7 @@ function EditProductPage({store}) {
             console.log(store.SelectedProductId);
             const resp = await axios.get(`http://localhost:8000/products/${store.SelectedProductId}`);
             setCurrProduct(resp.data);
-            setUpdatedProduct({...resp.data});
+            setUpdatedProduct({ ...resp.data });
         }
         fetchProduct();
     }, [store])
@@ -36,22 +36,33 @@ function EditProductPage({store}) {
     }
 
     const handleChange = (e) => {
-        setUpdatedProduct({...updatedProduct,[e.target.name]: e.target.value});
+        setUpdatedProduct({ ...updatedProduct, [e.target.name]: e.target.value });
     }
 
     const handleUpdate = (e) => {
-        store.updateProduct(currProduct.id,updatedProduct);
+        store.updateProduct(currProduct.id, updatedProduct);
     }
 
     return (
         <div>
-             <h2 id="headerEdit"> Edit Product</h2>
-             <div id="wrapperEditPage">
-             <div id="leftEditPage">
+            <h2 id="headerEdit"> Edit Product</h2>
+            <div id="wrapperEditPage">
+                <div id="leftEditPage">
                     <div id="editDiv">
-                        Product: <input type="text" name="name" defaultValue={currProduct.name} onChange={handleChange}/> <br />
-                        Price: <input type="text" name="price" defaultValue={currProduct.price} onChange={handleChange}/> <br />
-                        Quantity : <input type="text" name="quantity" defaultValue={currProduct.quantity} onChange={handleChange}/> <br /> <br />
+                        <table style={{ border: "none" }} className="editDivTable">
+                            <tr>
+                                <td> Product </td>
+                                <td> <input type="text" name="name" defaultValue={currProduct.name} onChange={handleChange} />  </td>
+                            </tr>
+                            <tr>
+                                <td>Price</td>
+                                <td><input type="text" name="price" defaultValue={currProduct.price} onChange={handleChange} /></td>
+                            </tr>
+                            <tr>
+                                <td>Quantity</td>
+                                <td> <input type="text" name="quantity" defaultValue={currProduct.quantity} onChange={handleChange} /> </td>
+                            </tr>
+                        </table>
                         <div id="buttons">
                             <button onClick={handleUpdate} className="editButtons">Update</button>
                             <button onClick={handleDelete} className="editButtons">Delete</button>
@@ -62,11 +73,11 @@ function EditProductPage({store}) {
 
                 <div id="rightEditPage">
                     <h4>{currProduct.name}'s customers:</h4>
-                    {customerWhoPurchased.map((customer,index)=>{
-                         return <EditProductCustomer customer={customer} store={store}></EditProductCustomer>
+                    {customerWhoPurchased.map((customer, index) => {
+                        return <EditProductCustomer customer={customer} store={store}></EditProductCustomer>
                     })}
                 </div>
-             </div>
+            </div>
         </div>
     )
 }

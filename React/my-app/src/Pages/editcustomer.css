@@ -31,6 +31,7 @@
     border-radius: 2px;
     /* background-color: rgb(208, 245, 233); */
     width:300px;
+    font-size: 18px;
     padding: 15px;
     margin-left: 100px;
 }
@@ -66,3 +67,16 @@
   .editButtons:focus {
     background-color: #F082AC;
   }
+
+.editDivTable table, 
+.editDivTable th,
+.editDivTable  td,
+.editDivTable tr{
+    /* border-width: thin;
+    border-style: solid; */
+    
+    border: none !important;
+    border-collapse: none !important;
+    /* font-size: 20px; */
+
+}

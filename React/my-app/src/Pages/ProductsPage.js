@@ -39,7 +39,6 @@ function ProductsPage({ store }) {
       <h2 style={{ textAlign: "center" }}> Products Page </h2>
       <div id="wrapperProductsPage">
         <div id="left">
-          
           <div id="numberOfPurchases">Number of purchases : {store.numOfPurchases}</div>
           <br />
           {store.products.map((product, index) => (
